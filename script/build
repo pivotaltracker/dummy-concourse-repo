@@ -3,5 +3,6 @@
 source "$(dirname "${BASH_SOURCE}")/bash-boilerplate.sh"
 
 echo "Running dummy-concourse-repo build..."
+echo "Git Status: $(git status)"
 echo "Ref (branch): $(git rev-parse --abbrev-ref HEAD)"
 echo "SHA: $(git rev-parse HEAD)"
