@@ -2,6 +2,8 @@
 
 source "$(dirname "${BASH_SOURCE}")/bash-boilerplate.sh"
 
+cd $(dirname "${BASH_SOURCE}")
+
 echo "Running dummy-concourse-repo build..."
 echo "Git Status: $(git status)"
 echo "Ref (branch): $(git rev-parse --abbrev-ref HEAD)"
