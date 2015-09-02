@@ -1,0 +1,10 @@
+---
+platform: linux
+
+image: docker:///tracker/base#latest
+
+inputs:
+- name: dummy-concourse-repo
+
+run:
+  path: dummy-concourse-repo/script/build
